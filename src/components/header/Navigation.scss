@@ -1,0 +1,9 @@
+.navigation {
+    display: flex;
+    &__item {
+        list-style: none;
+        &:not(:last-child){
+            padding-right: 40px;
+        }
+    }
+}

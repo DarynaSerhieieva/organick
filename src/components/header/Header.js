@@ -1,46 +1,15 @@
 import React, { Component } from "react";
-import Nav from "./Nav";
+import Navigation from "./Navigation";
 
-import './Header.css';
+const Header = () => {
 
-class Header extends Component {
-    state = {
-        navLink: [
-            {
-                to: '/',
-                name: 'Home'
-            },
-            {
-                to: 'about_us',
-                name: 'About us'
-            },
-            {
-                to: 'shop',
-                name: 'Shop'
-            },
-            {
-                to: 'pagest',
-                name: 'Pagest'
-            },
-            {
-                to: 'contact_us',
-                name: 'Contact us'
-            }
-        ]
-    }
-
-    render = () => {
-
-        const { navLink } = this.state;
-
-        return (
-            <>
-                <nav>
-                    <Nav navLink={navLink}/>
-                </nav>
-            </>
-        )
-    }
+    return (
+        <>
+            <nav className="wrapper">
+                <Navigation/>
+            </nav>
+        </>
+    )
 }
 
 export default Header;
