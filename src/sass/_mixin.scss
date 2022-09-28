@@ -1,0 +1,27 @@
+@mixin base-text {
+    font-family: 'Roboto', 'Tahoma', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: $base-color;
+}
+@mixin default-button {
+    font-size: 20px;
+    line-height: 32px;
+    color: $base-color;
+    text-decoration: none;
+    &:focus {
+        color: $green-color;
+        border: none;
+    }
+    &:hover {
+        opacity: calc(0.5);
+    }
+}
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-center-between {
+    @include flex-center;
+    justify-content: space-between;
+}

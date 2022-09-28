@@ -3,8 +3,6 @@ import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import uniqid from 'uniqid';
 
-import './Navigation.scss';
-
 const Navigation = () => {
     const menu = useSelector( state => state.menu );
 

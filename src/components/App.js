@@ -3,8 +3,9 @@ import { BrowserRouter, Route,Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import store from '../redux/store'; 
-import { Home, AboutUs, Shop, Pagest, ContactUs, Error } from './content';
+import { Home, AboutUs, Shop, Pagest, ContactUs, Cart, Error } from './content';
 import Layout from './layout/Layout';
+
 
 import './App.scss';
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="pagest" element={<Pagest />} />
             {/* <Route path="portfolio/:portfolioId" element={<PortfolioId />} /> */}
             <Route path="contact_us" element={<ContactUs />} />
+            <Route path="cart" element={<Cart/>} />
             <Route path="*" element={<Error/>}/>
           </Route>
         </Routes>
