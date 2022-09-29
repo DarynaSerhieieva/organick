@@ -3,7 +3,7 @@
 
 .header {
     @include flex-center-between;
-    margin-top: 40px;
+    margin: 40px 0;
 }
 
 .navigation {
@@ -19,13 +19,21 @@
         }
     }
 }
-.cart {
+.button-cart {
     @include flex-center;
     font-size: 17px;
     line-height: 29px;
     color: $base-color;
     text-decoration: none;
+    border: 1px $grey-transparent solid;
+    padding: 7px 11px;
+    border-radius: 33px;
     &__text {
-
+        padding: 0 10px;
+    }
+    &:hover {
+        & > img, span {
+            opacity: calc(0.5);
+        }
     }
 }

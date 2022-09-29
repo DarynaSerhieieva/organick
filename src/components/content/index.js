@@ -1,5 +1,5 @@
 export * from './Home';
-export * from './AboutUs';
+export * from './aboutUs/AboutUs';
 export * from './Shop';
 export * from './Pagest';
 export * from './ContactUs';

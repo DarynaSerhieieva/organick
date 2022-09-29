@@ -4,6 +4,29 @@
     font-style: normal;
     color: $base-color;
 }
+@mixin robot-main-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 58.8px;
+    margin: 0;
+}
+@mixin robot-title-article {
+    font-size: 25px;
+    line-height: 35px;
+}
+@mixin robot-content-text {
+    font-size: 18px;
+    line-height: 32.4px;
+}
+@mixin yellowtail-font-base {
+    font-family: 'Yellowtail', 'Brush Script MT', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 65px;
+    color: $green-color;
+    margin: 0;
+}
 @mixin default-button {
     font-size: 20px;
     line-height: 32px;
@@ -20,6 +43,10 @@
 @mixin flex-center {
     display: flex;
     align-items: center;
+}
+@mixin flex-center-center {
+    @include flex-center;
+    justify-content: center;
 }
 @mixin flex-center-between {
     @include flex-center;

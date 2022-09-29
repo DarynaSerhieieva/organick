@@ -1,0 +1,45 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixin';
+
+.about-us {
+    background: $grey-background;
+    padding: 130px 0 150px 0;
+    &__section {
+        @include flex-center;
+    }
+    &__img, &__content {
+        width: 50%;
+    }
+    &__name {
+        @include yellowtail-font-base;
+    }
+    &__title {
+        @include robot-main-title;
+    }
+    &__text {
+        @include robot-content-text;
+        margin: 0;
+        padding-top: 22px;
+    }
+}
+.advantag {
+    list-style: none;
+    padding: 0;
+    &__item {
+        @include flex-center
+    }
+    &__img {
+        @include flex-center-center;
+        width: 100px;
+        height: 100px;
+        background: $white-color;
+        border-radius: 20px;
+        margin-right: 20px;
+    }
+    &__content {
+        max-width: 552px;
+    }
+    &__title {
+        @include robot-title-article;
+    }
+}
