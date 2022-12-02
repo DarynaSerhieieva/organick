@@ -15,8 +15,8 @@ const initState = {
             name: 'Shop'
         },
         {
-            to: 'pagest',
-            name: 'Pagest'
+            to: 'pages',
+            name: 'Pages'
         },
         {
             to: 'contact_us',

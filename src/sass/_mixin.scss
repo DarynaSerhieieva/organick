@@ -32,6 +32,9 @@
     line-height: 32px;
     color: $base-color;
     text-decoration: none;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
     &:focus {
         color: $green-color;
         border: none;
@@ -51,4 +54,26 @@
 @mixin flex-center-between {
     @include flex-center;
     justify-content: space-between;
+}
+@mixin arrow {
+    width: 38px;
+    height: 34px;
+    border-radius: 50%;
+    background: $blue-arrow;
+    position: relative;
+    &::after {
+        content:"";
+        background-image: url("../img/arrow.svg");
+        width: 16px;
+        height: 11px;
+        position: absolute;
+        top:  50%;
+        left:  50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@mixin img-background {
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
 }

@@ -1,12 +1,11 @@
 import React from "react";
-
-import Advantages from "./Advantages";
+import { NavLink } from "react-router-dom";
 
 import citrus from './img/citrus.png';
 
-import './AboutUs.scss';
+import Advantages from "./Advantages";
 
-export const AboutUs = () => {
+const WeBelieve = () => {
 
     return (
         <>
@@ -24,10 +23,15 @@ export const AboutUs = () => {
                             aim to give our customers a healthy chemical-free meal for perfect nutrition.
                         </p>
                         <Advantages/>
+                        <NavLink className="link-to-shop" to='/shop'>
+                            <spam className="link-to-shop__text">Shop Now</spam>
+                            <spam className="link-to-shop__arrow"></spam>
+                        </NavLink>
                     </div>
                 </div>
-
             </section>
         </>
-    )
-}
+    );
+};
+
+export default WeBelieve;
