@@ -7,9 +7,9 @@ const FromOurFarm = () => {
            <section>
             <div className="from-our-farm">
                 <div className="from-our-farm__img"></div>
-                <div>
-                    <h2>Eco Friendly</h2>
-                    <h2>From our Farm to your Home.</h2>
+                <div className="from-our-farm__content">
+                    <h2 className="from-our-farm__content-yellowtail">Eco Friendly</h2>
+                    <h2 className="from-our-farm__content-title">From our Farm to your Home.</h2>
                     <FarmContentItems/>
                 </div>
             </div>

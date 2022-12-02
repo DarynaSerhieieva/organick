@@ -64,7 +64,7 @@
 }
 .from-our-farm {
     @include flex-center;
-
+    margin: 140px 0;
     &__img,
     &__content {
         width: 50%;
@@ -73,5 +73,13 @@
         @include img-background;
         background-image: url("./img/feild.png");
         height: 704px;
+    }
+    &__content {
+        &-yellowtail {
+            @include yellowtail-font-base;
+        }
+        &-title {
+            @include robot-main-title;
+        }
     }
 }

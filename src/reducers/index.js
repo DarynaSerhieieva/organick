@@ -40,6 +40,20 @@ const initState = {
             title: 'Quality Standards',
             text: 'Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.'
         }
+    ],
+    fromOurFarm: [
+        {
+            title: 'Choose Your Products',
+            text: 'In our listing, we have several collections of organic products. This is the place where you need to choose the product you want.'
+        },
+        {
+            title: 'Farmers will produce it',
+            text: 'The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.'
+        },
+        {
+            title: 'We Can Delivery too',
+            text: 'If you are not comfortable going to the nearby market place we also will deliver your product to your doorstep.'
+        }
     ]
 }
 
