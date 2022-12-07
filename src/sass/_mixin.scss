@@ -43,6 +43,9 @@
         opacity: calc(0.5);
     }
 }
+@mixin flex {
+    display: flex;
+}
 @mixin flex-center {
     display: flex;
     align-items: center;
@@ -54,6 +57,11 @@
 @mixin flex-center-between {
     @include flex-center;
     justify-content: space-between;
+}
+
+@mixin list-style-none {
+    list-style: none;
+    padding: 0;
 }
 @mixin arrow {
     width: 38px;

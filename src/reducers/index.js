@@ -41,7 +41,7 @@ const initState = {
             text: 'Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.'
         }
     ],
-    fromOurFarm: [
+    aboutOurFarm: [
         {
             title: 'Choose Your Products',
             text: 'In our listing, we have several collections of organic products. This is the place where you need to choose the product you want.'
