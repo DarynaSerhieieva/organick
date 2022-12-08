@@ -24,8 +24,8 @@ const WeBelieve = () => {
                         </p>
                         <Advantages/>
                         <NavLink className="link-to-shop" to='/shop'>
-                            <spam className="link-to-shop__text">Shop Now</spam>
-                            <spam className="link-to-shop__arrow"></spam>
+                            <span className="link-to-shop__text">Shop Now</span>
+                            <span className="link-to-shop__arrow"></span>
                         </NavLink>
                     </div>
                 </div>

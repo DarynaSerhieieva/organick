@@ -54,6 +54,24 @@ const initState = {
             title: 'We Can Delivery too',
             text: 'If you are not comfortable going to the nearby market place we also will deliver your product to your doorstep.'
         }
+    ],
+    ourSuccess: [
+        {
+            tipe: 'Organic',
+            valeu: '100%'
+        },
+        {
+            tipe: 'Active Product',
+            valeu: '285'
+        },
+        {
+            tipe: 'Organic Orchads',
+            valeu: '385+'
+        },
+        {
+            tipe: 'Years of Farming',
+            valeu: '25+'
+        }
     ]
 }
 

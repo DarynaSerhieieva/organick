@@ -9,14 +9,20 @@
     font-size: 45px;
     line-height: 58.8px;
     margin: 0;
+    padding: 0;
 }
 @mixin robot-title-article {
     font-size: 25px;
     line-height: 35px;
+    margin: 0;
+    padding: 0;
 }
 @mixin robot-content-text {
     font-size: 18px;
     line-height: 32.4px;
+    margin: 0;
+    padding: 0;
+    color: $grey-text;
 }
 @mixin yellowtail-font-base {
     font-family: 'Yellowtail', 'Brush Script MT', cursive;
@@ -26,6 +32,7 @@
     line-height: 65px;
     color: $green-color;
     margin: 0;
+    padding: 0;
 }
 @mixin default-button {
     font-size: 20px;
@@ -47,8 +54,12 @@
     display: flex;
 }
 @mixin flex-center {
-    display: flex;
+    @include flex;
     align-items: center;
+}
+@mixin flex-justify-center {
+    @include flex;
+    justify-content: center;
 }
 @mixin flex-center-center {
     @include flex-center;
@@ -58,10 +69,15 @@
     @include flex-center;
     justify-content: space-between;
 }
+@mixin flex-clumn-center {
+    @include flex-center;
+    flex-direction: column;
+}
 
 @mixin list-style-none {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 @mixin arrow {
     width: 38px;
