@@ -68,13 +68,13 @@
     height: 1200px;
     &__custumer {
         @include flex-clumn-center;
-        margin-top: 130px;
     }
     &__title {
         @include robot-main-title;
         margin-bottom: 60px;
         &-yellowtail {
             @include yellowtail-font-base;
+            margin-top: 130px;
         }
     }
     &__rating {
@@ -91,11 +91,49 @@
     &__name {
         @include robot-title-article;
         margin-top: 23px;
+        &-type {
+            font-size: 14px;
+            line-height: 27px;
+            color: $grey-text;
+        }
     }
-    & span {
-        color: $grey-text;
-        width: 73px;
-        height: 27px;
+    &__line {
+        width: 966px;
+        height: 2px;
+        background: rgba(224, 224, 224, 1);
+        margin: 96px auto 100px ;
+    }
+    
+}
+.success {
+    @include flex-center-center;
+    @include list-style-none;
+    &__cercle {
+        @include flex;
+        width: 250px;
+        height: 250px;
+        border: 6px solid $green-color;
+        border-radius: 50%;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        &-grey {
+            @include flex-clumn-center-center;
+            border: 5px solid $white-color;
+            background: rgba(241, 241, 241, 1);
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+        }
+    }
+    &__value {
+        font-size: 42px;
+        line-height: 55px;
+        margin: 0;
+    }
+    &__type {
+        @include robot-content-text;
+        color: $base-color;
     }
 }
 .from-our-farm {

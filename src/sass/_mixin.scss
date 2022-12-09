@@ -73,7 +73,10 @@
     @include flex-center;
     flex-direction: column;
 }
-
+@mixin flex-clumn-center-center {
+    @include flex-center-center;
+    flex-direction: column;
+}
 @mixin list-style-none {
     list-style: none;
     padding: 0;

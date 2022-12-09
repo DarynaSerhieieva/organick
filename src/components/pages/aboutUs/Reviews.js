@@ -23,8 +23,9 @@ const Reviews = () => {
                             The quality of organic produce is extremely high, the service is second to none and the taste of the food takes me back to my childhood when we were growing our own.
                         </p>
                         <h3 className="review__name">Sara Taylor</h3>
-                        <span>Consumer</span>
+                        <span className="review__name-type">Consumer</span>
                     </div>
+                    <div className="review__line"></div>
                     <OurSuccess/>
                 </div>
             </section>

@@ -57,20 +57,20 @@ const initState = {
     ],
     ourSuccess: [
         {
-            tipe: 'Organic',
-            valeu: '100%'
+            type: 'Organic',
+            value: '100%'
         },
         {
-            tipe: 'Active Product',
-            valeu: '285'
+            type: 'Active Product',
+            value: '285'
         },
         {
-            tipe: 'Organic Orchads',
-            valeu: '385+'
+            type: 'Organic Orchads',
+            value: '385+'
         },
         {
-            tipe: 'Years of Farming',
-            valeu: '25+'
+            type: 'Years of Farming',
+            value: '25+'
         }
     ]
 }
