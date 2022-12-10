@@ -1,0 +1,18 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixin';
+
+.footer {
+    @include flex;
+    &__title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    &__contact {
+        border-right: 1px solid $grey-line;
+        padding-right: 19px;
+    }
+    &__utility {
+        border-left: 1px solid $grey-line;
+        padding-left: 19px;
+    }
+}

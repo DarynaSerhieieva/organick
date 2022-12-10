@@ -1,6 +1,7 @@
 import React from "react";
 
 import './AboutUs.scss';
+
 import FromOurFarm from "./FromOurFarm";
 import Reviews from "./Reviews";
 import WeBelieve from "./WeBelieve";
