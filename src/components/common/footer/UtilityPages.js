@@ -7,14 +7,14 @@ const UtilityPages = () => {
 
     return(
         <>
-            <ul>
+            <ul className="utility-page">
                 {
                     utilityPages.map(item => {
                         const { link, name } = item;
 
                         return(
-                            <li key={uniqid()}>
-                                <a src={link}>{name}</a>
+                            <li className="utility-page__item" key={uniqid()}>
+                                <a className="utility-page__link" src={link}>{name}</a>
                             </li>
                         )
                     })

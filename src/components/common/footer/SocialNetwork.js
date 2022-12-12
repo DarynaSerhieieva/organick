@@ -7,14 +7,16 @@ const SocialNetwork = () => {
 
     return(
         <>
-             <ul>
+             <ul className="social-network">
                 {
                     socialNetworkBase.map(item => {
                         const { link, svg } = item;
 
                         return(
-                            <li key={uniqid()}>
-                                <a src={link}>{svg}</a>
+                            <li className="social-network__icone" key={uniqid()}>
+                                <a className="social-network__link" src={link}>
+                                    <div className="social-network__icone-circle">{svg}</div>
+                                </a>
                             </li>
                         )
                     })

@@ -67,7 +67,7 @@
     width: 100%;
     height: 1200px;
     &__custumer {
-        @include flex-clumn-center;
+        @include flex-column-center;
     }
     &__title {
         @include robot-main-title;
@@ -118,7 +118,7 @@
             margin-right: 30px;
         }
         &-grey {
-            @include flex-clumn-center-center;
+            @include flex-column-center-center;
             border: 5px solid $white-color;
             background: rgba(241, 241, 241, 1);
             width: 240px;

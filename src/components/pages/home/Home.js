@@ -5,7 +5,7 @@ import './Home.scss';
 export const Home = () => {
 
     return (
-        <>
+        <main>
         
             <section className="home">
                 <div className="home__backgraund">
@@ -21,6 +21,7 @@ export const Home = () => {
 
                 </div>
             </section>
-        </>
-    )
-}
+        </main>
+    );
+};
+

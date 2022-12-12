@@ -7,6 +7,7 @@ import SocialNetwork from "./SocialNetwork";
 import UtilityPages from "./UtilityPages";
 
 import logo from './../../../img/logo.svg';
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
 
@@ -19,8 +20,10 @@ const Footer = () => {
                         <ContactUs/>
                     </div>
                     <div className="footer__social">
-                        <img src={logo} alt="logo"/>
-                        <p>
+                        <NavLink to='/'>
+                            <img src={logo} alt="logo" width="200" height="56"/>
+                        </NavLink>
+                        <p className="footer__text">
                             We are a popular and farming company aspiring to be a leader in the Organic food industry.
                         </p>
                         <SocialNetwork/>
@@ -30,7 +33,11 @@ const Footer = () => {
                         <UtilityPages/>
                     </div>
                 </div>
-                
+                <div className="copyright">
+                    <p>
+                        Copyright © Organick | Designed by VictorFlow - Powered by Webflow
+                    </p>
+                </div>
             </footer>
         </>
     );

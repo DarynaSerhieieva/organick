@@ -1,18 +1,109 @@
 @import '../../../sass/variables';
 @import '../../../sass/mixin';
 
+ footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+ }
 .footer {
     @include flex;
+    @include flex-between;
+    margin-bottom: 150px;
     &__title {
         font-size: 30px;
         line-height: 42px;
+        margin: 0;
     }
     &__contact {
         border-right: 1px solid $grey-line;
         padding-right: 19px;
+        @include flex-column-end;
+        width: 26%;
+    }
+    &__social {
+        @include flex-column-center;
+        width: 48%;
+    }
+    &__text {
+        @include robot-content-text;
+        max-width: 500px;
+        text-align: center;
+        padding: 45px 0 60px 0;
     }
     &__utility {
         border-left: 1px solid $grey-line;
         padding-left: 19px;
+        @include flex-column-start;
+        width: 26%;
     }
+}
+.contact-us {
+    @include list-style-none;
+    @include flex-column-end;
+    margin-top: 34px;
+    &__item {
+        margin-bottom: 38px;
+    }
+    &__type {
+        text-align: end;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0;
+        color: $grey-text;
+    }
+    &__value {
+        @include robot-text-info;
+        margin-top: 5px;
+    }
+}
+.social-network {
+    @include list-style-none;
+    @include flex;
+    &__icone {
+        &:not(:last-child) {
+            padding-right: 20px;
+        }
+        &-circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: $background-icon;
+            @include flex-center-center;
+            &:hover {
+                opacity: calc(0.5);
+            }
+        }
+    }
+    &__link {
+        cursor: pointer;
+       
+    }
+}
+.utility-page {
+    @include list-style-none;
+    @include flex-column-start;
+    margin-top: 20px;
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+    &__link {
+        @include robot-text-info;
+        cursor: pointer;
+        &:hover {
+            opacity: calc(0.5);
+        }
+    }
+}
+.copyright {
+    @include flex;
+    align-items: flex-end;
+    @include flex-center-center;
+    @include robot-content-text;
+    border-top: 1px solid $grey-line;
+    padding: 21px 0 27px;
 }

@@ -24,6 +24,13 @@
     padding: 0;
     color: $grey-text;
 }
+@mixin robot-text-info {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0;
+    padding: 0;
+    color: $grey-text;
+}
 @mixin yellowtail-font-base {
     font-family: 'Yellowtail', 'Brush Script MT', cursive;
     font-weight: 400;
@@ -65,17 +72,33 @@
     @include flex-center;
     justify-content: center;
 }
-@mixin flex-center-between {
+@mixin flex-between {
+    @include flex;
+    justify-content: space-between;
+}
+@mixin flex-between-center {
     @include flex-center;
     justify-content: space-between;
 }
-@mixin flex-clumn-center {
-    @include flex-center;
+@mixin flex-column {
+    @include flex;
     flex-direction: column;
 }
-@mixin flex-clumn-center-center {
+@mixin flex-column-center {
+    @include flex-center;
+    @include flex-column;
+}
+@mixin flex-column-end{
+    @include flex-column;
+    align-items: flex-end;
+}
+@mixin flex-column-start{
+    @include flex-column;
+    align-items: flex-start;
+}
+@mixin flex-column-center-center {
     @include flex-center-center;
-    flex-direction: column;
+    @include flex-column;
 }
 @mixin list-style-none {
     list-style: none;

@@ -9,10 +9,10 @@ import WeBelieve from "./WeBelieve";
 export const AboutUs = () => {
 
     return (
-        <>
+        <main>
             <WeBelieve/>
             <FromOurFarm/>
             <Reviews/>
-        </>
-    )
-}
+        </main>
+    );
+};
