@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import './Home.scss';
 
@@ -6,19 +7,13 @@ export const Home = () => {
 
     return (
         <main>
-        
-            <section className="home">
-                <div className="home__backgraund">
-                    <div className="home__content">
-                        <p>
-
-                        </p>
+            <section>
+                <div className="nature-world">
+                    <div className="nature-world__content">
+                        <h2 className="nature-world__title-yellowtail">Made with nature</h2>
+                        <h2 className="nature-world__title">Welcome to the world of nature and organic.</h2>
+                        <NavLink className="nerural-world__link" to="/pages">Explore Now</NavLink>
                     </div>
-                    <div className="home__img">
-
-                    </div>
-
-
                 </div>
             </section>
         </main>
