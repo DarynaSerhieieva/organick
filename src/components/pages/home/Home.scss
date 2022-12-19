@@ -7,7 +7,96 @@
     height: 913px;
     margin-top: 40px;
     &__content {
-        @include flex-column;
-        justify-content: center;
+        padding-top: 220px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 84px;
+        max-width: 496px;
+        margin: 0;
+        padding-top: 14px;
+        &-yellowtail {
+            @include yellowtail-font-base;
+        }
+    }
+    &__link {
+        margin-top: 30px;
+        @include default-button;
+        padding: 25px 9px 25px 33px;
+        background: $yellow-button;
+        &-padding {
+            padding-right: 24px;
+        }
+    }
+    &__arrow {
+        @include arrow;
+    }
+}
+.advertisement {
+    @include flex;
+    margin-top: 140px;
+    margin-bottom: 140px;
+    &__block {
+        width: 50%;
+        height: 378px;
+        border-radius: 30px;
+        @include img-background;
+        &-banana {
+            background-image: url('./img/banana.png');
+        }
+        &-peach {
+            background-image: url('./img/peach.png');
+        }
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+    &__content {
+        margin-left: 55px;
+        margin-top: 105px;
+    }
+    &__title {
+        @include yellowtail-font-base;
+        &-white {
+            color: $white-color;
+        }
+    }
+    &__text {
+        font-size: 40px;
+        line-height: 52px;
+        max-width: 260px;
+        margin: 0;
+        &-white {
+            color: $white-color;
+        }
+    }
+}
+.offer-product {
+    background: $base-color;
+    padding-top: 139px;
+    padding-bottom: 160px;
+    &__content {
+        @include flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        color: $white-color;
+    }
+    &__title {
+        @include robot-main-title;
+        &-yellowtail {
+            @include yellowtail-font-base;
+        }
+    }
+    &__link {
+        @include default-button;
+        padding: 25px 11px 25px 33px;
+        background: $yellow-button;
+        &-padding {
+            padding-right: 20px;
+        }
+        &-arrow {
+            @include arrow;
+        }
     }
 }
