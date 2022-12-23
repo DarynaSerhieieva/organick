@@ -100,3 +100,11 @@
         }
     }
 }
+.shop-section {
+    background: $background-icon;
+    &__box {
+        @include flex;
+        position: relative;
+        margin-top: 140px;
+    }
+}

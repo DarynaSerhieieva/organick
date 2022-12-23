@@ -146,6 +146,23 @@ const initState = {
             name: 'Licenses',
             link: '#'
         }
+    ],
+    listShopSection: [
+        {
+            name: 'Fruit Juice',
+            img: './img/fruit-juice.png',
+            to: '/shop'
+        },
+        {
+            name: 'Organic Food',
+            img: './img/organic-food.png',
+            to: '/shop'
+        },
+        {
+            name: 'Nuts Cookies',
+            img: './img/nuts-cookies.png',
+            to: '/shop'
+        }
     ]
 }
 

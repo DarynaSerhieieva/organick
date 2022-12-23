@@ -4,6 +4,7 @@ import Advertisement from "./Advertisement";
 
 import './Home.scss';
 import OfferProducts from "./OfferProducts";
+import ShopSection from "./ShopSection";
 
 export const Home = () => {
 
@@ -25,6 +26,7 @@ export const Home = () => {
             </section>
             <Advertisement/>
             <OfferProducts/>
+            <ShopSection/>
         </main>
     );
 };
