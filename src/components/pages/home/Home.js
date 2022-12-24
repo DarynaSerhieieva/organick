@@ -3,8 +3,10 @@ import { NavLink } from "react-router-dom";
 import Advertisement from "./Advertisement";
 
 import './Home.scss';
+import NewsHome from "./NewsHome";
 import OfferProducts from "./OfferProducts";
 import ShopSection from "./ShopSection";
+import Subscribe from "./Subscribe";
 
 export const Home = () => {
 
@@ -27,6 +29,8 @@ export const Home = () => {
             <Advertisement/>
             <OfferProducts/>
             <ShopSection/>
+            <NewsHome/>
+            <Subscribe/>
         </main>
     );
 };

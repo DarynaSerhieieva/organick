@@ -1,5 +1,38 @@
 @import '../../../sass/variables';
 @import '../../../sass/mixin';
+.header-section{
+    @include flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+    &__title {
+        @include robot-main-title;
+        &-white {
+            color: $white-color;
+        }
+        &-yellowtail {
+            @include yellowtail-font-base;
+        }
+    }
+    &__link {
+        @include default-button;
+        padding: 25px 11px 25px 33px;
+        &-white {
+            background: $white-color;
+            border-color: $base-color;
+        }
+        &-yellow {
+            background: $yellow-button;
+            background-color: $yellow-button;
+        }
+    }
+    &__name {
+        padding-right: 20px;
+    }
+    &__arrow {
+        @include arrow;
+    }
+}
 
 .nature-world {
     background: url("./img/natural-world.png");
@@ -76,35 +109,35 @@
     background: $base-color;
     padding-top: 139px;
     padding-bottom: 160px;
-    &__content {
-        @include flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        color: $white-color;
-    }
-    &__title {
-        @include robot-main-title;
-        &-yellowtail {
-            @include yellowtail-font-base;
-        }
-    }
-    &__link {
-        @include default-button;
-        padding: 25px 11px 25px 33px;
-        background: $yellow-button;
-        &-padding {
-            padding-right: 20px;
-        }
-        &-arrow {
-            @include arrow;
-        }
-    }
 }
 .shop-section {
     background: $background-icon;
     &__box {
         @include flex;
-        position: relative;
-        margin-top: 140px;
+        
+        padding: 140px 0; 
     }
+    &__item {
+        position: relative;
+        &:not(:last-child) {
+            margin-right: 30px;
+            width: 33.33%;
+        }
+    }
+    &__link {
+        @include default-button;
+        @include robot-title-article;
+        padding: 30px 79px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $white-color;
+        border-color: $white-color;
+        white-space: nowrap;
+    }
+}
+.header-home {
+    padding-top: 130px;
+    padding-bottom: 106px;
 }

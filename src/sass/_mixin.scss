@@ -12,6 +12,7 @@
     padding: 0;
 }
 @mixin robot-title-article {
+    font-weight: 700;
     font-size: 25px;
     line-height: 35px;
     margin: 0;
@@ -46,7 +47,9 @@
     line-height: 32px;
     color: $base-color;
     text-decoration: none;
+    border: 1px solid transparent;
     border-radius: 16px;
+    background: $white-color;
     display: inline-flex;
     align-items: center;
     &:focus {
