@@ -141,3 +141,53 @@
     padding-top: 130px;
     padding-bottom: 106px;
 }
+.subscribe {
+    @include flex-between-center;
+    background-image: url('./img/orange.png');
+    max-width: 1380px;
+    height: 320px;
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 60px;
+        color: $white-color;
+        max-width: 323px;
+        padding-left: 70px;
+    }
+    &__form {
+        
+        padding-right: 80px;
+    }
+    &__input {
+        @include open-sans-text-info;
+        max-width: 350px;
+        padding: 26px 30px;
+        border: 1px solid $white-color;
+        border-radius: 16px;
+        margin-right: 10px;
+        &:hover {
+            opacity: calc(0.7);
+        }
+        &:focus {
+            outline: none;
+            border-color: $base-color;
+            color: $base-color;
+        }
+    }
+    &__button {
+        @include default-button;
+        padding: 26px 11px 26px 36px;
+        background-color: $base-color;
+        border-color: $base-color;
+        color: $white-color;
+        &-name {
+            @include open-sans-heading;
+            color: $white-color;
+            padding-right: 25px;
+        }
+    }
+
+    &__arrow {
+        @include arrow;
+    }
+}

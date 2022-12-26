@@ -28,8 +28,8 @@
         width: 48%;
     }
     &__text {
-        @include robot-content-text;
-        max-width: 500px;
+        @include open-sans-text;
+        max-width: 540px;
         text-align: center;
         padding: 45px 0 60px 0;
     }
@@ -48,14 +48,11 @@
         margin-bottom: 38px;
     }
     &__type {
+        @include open-sans-heading;
         text-align: end;
-        font-size: 18px;
-        line-height: 23px;
-        margin: 0;
-        color: $grey-text;
     }
     &__value {
-        @include robot-text-info;
+        @include open-sans-text-info;
         margin-top: 5px;
     }
 }
@@ -92,7 +89,7 @@
         }
     }
     &__link {
-        @include robot-text-info;
+        @include open-sans-text-info;
         cursor: pointer;
         &:hover {
             opacity: calc(0.5);
@@ -103,7 +100,7 @@
     @include flex;
     align-items: flex-end;
     @include flex-center-center;
-    @include robot-content-text;
+    @include open-sans-text;
     border-top: 1px solid $grey-line;
     padding: 21px 0 27px;
 }

@@ -18,16 +18,29 @@
     margin: 0;
     padding: 0;
 }
-@mixin robot-content-text {
+@mixin open-sans-text {
+    font-family: 'Open Sans', 'Tahoma', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 32.4px;
     margin: 0;
     padding: 0;
     color: $grey-text;
 }
-@mixin robot-text-info {
+@mixin open-sans-text-info {
+    font-family: 'Open Sans', 'Tahoma', sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 29px;
+    margin: 0;
+    padding: 0;
+    color: $grey-text;
+}
+@mixin open-sans-heading {
+    font-family: 'Open Sans', 'Tahoma', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
     margin: 0;
     padding: 0;
     color: $grey-text;

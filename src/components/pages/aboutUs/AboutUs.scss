@@ -17,8 +17,9 @@
         @include robot-main-title;
     }
     &__text {
-        @include robot-content-text;
+        @include open-sans-text;
         padding-top: 22px;
+        max-width: 658px;
     }
 }
 .advantag {
@@ -45,8 +46,10 @@
         @include robot-title-article;
     }
     &__text {
+        @include open-sans-text;
         padding: 0;
         margin-top: 9px;
+        max-width: 524px;
     }
 }
 .link-to-shop{
@@ -84,7 +87,7 @@
         padding-bottom: 34px;
     }
     &__content {
-        @include robot-content-text;
+        @include open-sans-text;
         max-width: 870px;
         text-align: center;
     }
@@ -92,6 +95,7 @@
         @include robot-title-article;
         margin-top: 23px;
         &-type {
+            font-family: 'Open Sans', 'Tahoma', sans-serif;
             font-size: 14px;
             line-height: 27px;
             color: $grey-text;
@@ -132,7 +136,7 @@
         margin: 0;
     }
     &__type {
-        @include robot-content-text;
+        @include open-sans-text;
         color: $base-color;
     }
 }
@@ -175,7 +179,7 @@
         padding: 9px 0 4px 0;
     }
     &__text {
-        max-width: 620px;
-        @include robot-content-text;
+        max-width: 600px;
+        @include open-sans-text;
     }
 }
