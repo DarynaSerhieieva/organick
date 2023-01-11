@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import ProductTemplate from "../ProductTemplate";
 
 import HeaderSection from "./HeaderSection";
 
@@ -7,7 +8,7 @@ const OfferProducts = () => {
 
     const productList = useSelector( state => state.productsList);
 
-    const discountProductList = productList.filter((item, index) => item.discount || index <= 3);
+    const discountProductList = productList.filter(item => item.discount).slice(0, 3);
 
     return(
         <section className="offer-product">
@@ -20,10 +21,12 @@ const OfferProducts = () => {
                     textColor="white"
                     to="/shop"
                 />
-                <div>
+                <div className="offer-product__products">
                     {
                         discountProductList.map(item => {
-                            <h2>{item.name}</h2>
+                            return(
+                                <ProductTemplate item={item}/>
+                            )
                         })
                     }
                 </div>

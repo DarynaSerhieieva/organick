@@ -167,62 +167,62 @@ const initState = {
     productsList: [
         {
             name: 'Calabrese Broccoli',
-            img: '../img/broccoli.png',
+            img: './img/broccoli.png',
             type: 'Vegetable',
             price: '$ 25.00 USD',
             newPrice: '$ 21.00 USD',
-            discount: false,
-            new: false,
+            discount: true,
+            newItem: true,
             rating: 5
         },
         {
             name: 'Fresh Corn',
-            img: '../img/corn.png',
+            img: './img/corn.png',
             type: 'Vegetable',
             price: '$ 21.23 USD',
             newPrice: '$ 18.00 USD',
-            discount: false,
-            new: false,
+            discount: true,
+            newItem: false,
             rating: 5
         },
         {
             name: 'Dried Pistachio',
-            img: '../img/pistachio.png',
+            img: './img/pistachio.png',
             type: 'Millets',
             price: '$ 61.00 USD',
             newPrice: '$ 48.00 USD',
-            discount: false,
-            new: false,
+            discount: true,
+            newItem: false,
             rating: 5
         },
         {
             name: 'Vegan Red Tomato',
-            img: '../img/red-tomato.png',
+            img: './img/red-tomato.png',
             type: 'Vegetable',
             price: '$ 14.00 USD',
             newPrice: '$ 9.37 USD',
-            discount: false,
-            new: false,
+            discount: true,
+            newItem: false,
             rating: 5
         },
         {
             name: 'Organic Almonds',
-            img: '../img/almonds.png',
+            img: './img/almonds.png',
             type: 'Fruits',
             price: '$ 21.00 USD',
             newPrice: '$ 18.00 USD',
             discount: true,
-            new: false,
+            newItem: false,
             rating: 5
         },
         {
             name: 'Brown Hazelnut',
-            img: '../img/hazelnut.png',
+            img: './img/hazelnut.png',
             type: 'Millets',
             price: '$ 43.00 USD',
             newPrice: '$ 34.00 USD',
             discount: true,
-            new: false,
+            newItem: false,
             rating: 5
         }
     ]

@@ -109,12 +109,15 @@
     background: $base-color;
     padding-top: 139px;
     padding-bottom: 160px;
+    &__products {
+        @include flex;
+        margin-top: 48px;
+    }
 }
 .shop-section {
     background: $background-icon;
     &__box {
         @include flex;
-        
         padding: 140px 0; 
     }
     &__item {

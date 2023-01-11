@@ -1,6 +1,12 @@
+@mixin mar-padd-none {
+    margin: 0;
+    padding: 0;
+}
 @mixin base-text {
     font-family: 'Roboto', 'Tahoma', sans-serif;
     font-weight: 400;
+    font-size: 21px;
+    line-height: 35px;
     font-style: normal;
     color: $base-color;
 }
@@ -8,42 +14,30 @@
     font-weight: 700;
     font-size: 45px;
     line-height: 58.8px;
-    margin: 0;
-    padding: 0;
+    @include mar-padd-none;
 }
 @mixin robot-title-article {
     font-weight: 700;
     font-size: 25px;
     line-height: 35px;
-    margin: 0;
-    padding: 0;
+    @include mar-padd-none;
 }
 @mixin open-sans-text {
     font-family: 'Open Sans', 'Tahoma', sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 32.4px;
-    margin: 0;
-    padding: 0;
+    @include mar-padd-none;
     color: $grey-text;
 }
 @mixin open-sans-text-info {
-    font-family: 'Open Sans', 'Tahoma', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    @include open-sans-text;
     line-height: 29px;
-    margin: 0;
-    padding: 0;
-    color: $grey-text;
 }
 @mixin open-sans-heading {
-    font-family: 'Open Sans', 'Tahoma', sans-serif;
+    @include open-sans-text;
     font-weight: 700;
-    font-size: 18px;
     line-height: 23px;
-    margin: 0;
-    padding: 0;
-    color: $grey-text;
 }
 @mixin yellowtail-font-base {
     font-family: 'Yellowtail', 'Brush Script MT', cursive;
@@ -52,8 +46,7 @@
     font-size: 36px;
     line-height: 65px;
     color: $green-color;
-    margin: 0;
-    padding: 0;
+    @include mar-padd-none;
 }
 @mixin default-button {
     font-size: 20px;
@@ -118,8 +111,7 @@
 }
 @mixin list-style-none {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    @include mar-padd-none;
 }
 @mixin arrow {
     width: 38px;
