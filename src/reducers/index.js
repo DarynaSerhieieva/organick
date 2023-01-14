@@ -167,7 +167,7 @@ const initState = {
     productsList: [
         {
             name: 'Calabrese Broccoli',
-            img: './img/broccoli.png',
+            img: require('../img/broccoli.png'),
             type: 'Vegetable',
             price: '$ 25.00 USD',
             newPrice: '$ 21.00 USD',
@@ -177,7 +177,7 @@ const initState = {
         },
         {
             name: 'Fresh Corn',
-            img: './img/corn.png',
+            img: require('../img/corn.png'),
             type: 'Vegetable',
             price: '$ 21.23 USD',
             newPrice: '$ 18.00 USD',
@@ -187,7 +187,7 @@ const initState = {
         },
         {
             name: 'Dried Pistachio',
-            img: './img/pistachio.png',
+            img: require('../img/pistachio.png'),
             type: 'Millets',
             price: '$ 61.00 USD',
             newPrice: '$ 48.00 USD',
@@ -197,7 +197,7 @@ const initState = {
         },
         {
             name: 'Vegan Red Tomato',
-            img: './img/red-tomato.png',
+            img: require('../img/red-tomato.png'),
             type: 'Vegetable',
             price: '$ 14.00 USD',
             newPrice: '$ 9.37 USD',
@@ -207,7 +207,7 @@ const initState = {
         },
         {
             name: 'Organic Almonds',
-            img: './img/almonds.png',
+            img: require('../img/almonds.png'),
             type: 'Fruits',
             price: '$ 21.00 USD',
             newPrice: '$ 18.00 USD',
@@ -217,7 +217,7 @@ const initState = {
         },
         {
             name: 'Brown Hazelnut',
-            img: './img/hazelnut.png',
+            img: require('../img/hazelnut.png'),
             type: 'Millets',
             price: '$ 43.00 USD',
             newPrice: '$ 34.00 USD',
@@ -225,6 +225,119 @@ const initState = {
             newItem: false,
             rating: 5
         }
+    ],
+    news: [
+        // {
+        //     author: 'Kristina Castle',
+        //     header: 'Everything You Need to Know About Organic',
+        //     text: 'Organic farming is the only way that you still can experience the real world.',
+        //     img: require('../img/lettuce.png'),
+        //     alt: 'lettuce'
+        // },
+        // {
+        //     author: 'Alex Louis',
+        //     header: 'Organic Fruits: Surprising Benefits and Facts',
+        //     text: 'The world of nature has grown on the principles of health, ecology, and care.',
+        //     img: require('../img/tomato.png'),
+        //     alt: 'tomato'
+        // },
+        {
+            author: 'Betty Gold and Samantha Leffler',
+            header: 'The 30 Healthiest Foods to Eat Every Day',
+            text: "All too often, seemingly healthy snacks are secretly loaded with sugar, saturated fat, and carbohydrates. That's why we handpicked the healthiest foods to eat that are delicious and incredibly easy to cook. After all, rule number one for sticking to a smart meal plan is to not get bored, and these healthy ingredients will keep you on your toes (promise!). You'll notice something that all these healthy foods have in common: each one is a basic ingredient, such as a fruit, vegetable, grain, or dairy product. That means no pre-packaged products with a laundry list of strange-sounding ingredients. You can use this as a rule of thumb when shopping: if the food is simple, wholesome, plant-based, and/or comes from the periphery of the grocery store—i.e., where the produce, eggs, fish, and other whole foods tend to live—you're in good shape. (Literally.) Now, on to the healthiest foods to eat list.",
+            img: require('../img/healthy.jpeg'),
+            alt: 'healthy food'
+        },
+        {
+            author: 'Marnie Kunz',
+            header: '15 Benefits of Organic Food',
+            text: `What is Organic Food?
+            Organic food is grown without the use of synthetic chemicals and does not contain genetically modified organisms. Organic foods can be fruits, vegetables, grains, dairy, and meat. Organic farms can be small or large, and they must meet strict U.S. Department of Agriculture requirements to label their food as organic. 
+            
+            Organic farms aim to cut pollution, provide safe places for farm animals to live, and promote a self-sustaining cycle of resources on a farm, according to the Mayo Clinic. 
+            
+            benefits-of-Organic-food
+            These foods do not include a lot of pesticides so you do not have to get them organic if you’re on a budget. 
+            
+            Although organic foods do not contain synthetic pesticides, they may contain some naturally-derived pesticides so they are not always pesticide-free. 
+            
+            Organic Meat
+            Unlike factory-farmed or “regular” meat, organic meat is raised without being injected with antibiotics and hormones. Organic beef is raised on a diet of grains, corn, and grazing on grass and they are not fed any GMOs or sewage sludge. The USDA requires that organic livestock is raised in a way that “accommodates their natural behaviors” so they are not confined to small spaces for long stretches of time. 
+            
+            Certified Organic Food 
+            With all the different organic and natural claims on food, it can be confusing to know what to buy. There are certain standards that the U.S. Department of Agriculture (USDA) requires for a food to be certified as organic. The USDA guidelines include the following standards for the organic labels:
+            
+            100% organic. This label is used on certified organic foods that have one ingredient or many ingredients if all the items are certified organic, except for salt and water. These foods may have a USDA seal.
+            
+            Organic. Food can be labeled as organic if at least 95% of the ingredients are certified organic, except for salt and water. The items that aren't organic must be from a USDA list of approved additional ingredients. These foods may have a USDA seal.
+            
+            Made with organic. If food has at least 70% certified organic ingredients, it can have a "made with organic" ingredients label. For instance, a cereal might be labeled "made with organic oats." The ingredient list must show what items are organic. Made with organic products are not allowed to carry a USDA seal.
+            
+            Organic ingredients. If food has some organic ingredients but less than 70% of the ingredients are certified organic, the product can't be labeled as organic. It also can't have a USDA seal. The ingredient list can show which ingredients are organic.`,
+            img: require('../img/organic-food.jpg'),
+            alt: 'organic food'
+        },
+        {
+            author: 'Bob Odenkirk',
+            header: 'Nutritionist Reveals The Secret To Eating Healthy With Lesser Cravings',
+            text: `To practice healthy eating in a sustainable manner, mindful eating and a few more principles are required. Nutritionist Ishi Khosla, in an Instagram post, talks about a few principles of healthy eating that can help in maintaining your health, fitness levels and weight goals. Calorie-restrictive and weight loss diets aren't the ideal way to go. You needn't starve yourself and go to extremes just to lose a few kilos. Moderation is the key. Have you favourite dessert and even fried food at times. Maintaining a balance and eating everything you love, in controlled proportions, is the key to being healthy and fit.
+            Principles of healthy eating
+            In an Instagram post, Khosla talks about a few rules that can you help you live a healthy liftestyle with lesser cravings, mood swings and irritability.`,
+            img: require('../img/eat-healthy.jpg'),
+            alt: 'woman is eating healthy food'
+        },
+        {
+            author: 'Mark Diesveld',
+            header: 'Organic food: a niche or the future standard?',
+            text: `Organic consumption is booming and has been a rapidly growing industry for over two decades. Although food safety issues, food scandals and environmental considerations have been around for longer than that, the organic market accelerates faster than ever, resulting from increasing transparency in the supply chain and the way consumers are informed. There is a widespread perception among consumers regarding divergent benefits of organic food consumption as opposed to conventional food.
+            
+            Let’s define ‘organic’
+            Organic food derives its label from the production process. It is certified food produced by methods that comply with standards and legislation of organic farming. Even though these standards vary worldwide, they share the same principles: the avoidance of use of artificial chemicals, antibiotics, hormones, genetically modified organisms (GMOs) and artificial food additives, such as preservatives, sweeteners, coloring, flavoring and monosodium glutamate. Irradiation and industrial solvents are also typically not used in the process of organic food production. The organic food production focuses on the use of natural substances, crop rotation and nutrient recycling to conserve biodiversity and to promote ecological balance. There is a strong emphasis on animal- and environmentally friendly farming and cultivation methods.
+            
+            While an increasing number of processed organic products are on the market nowadays, the most purchased organic products are unprocessed foods, such as fruits and vegetables. Particularly, plant-based foods are well-known and are most often associated with organic food by consumers. Natural fertilizers are used to grow organic crops in order to improve plant growth, while natural pest enemies (f.i. ladybugs and wasps) are used for pest controlment.
+            
+            Although in general consumers associate organic food with plant-based products, animal-based products can also be produced organically. In order for these types of products to be labeled organic, raised animals are not allowed antibiotics or hormones to stimulate growth. Additionally, they may not descend from cloned animals and they must have enough space (limited stocking density) and access to fields. This prevents overgrazing, pollution and soil erosion. Feed should furthermore also be organic. Genetically modified feed is prohibited.
+            
+            Do consumers prefer organic food?
+
+            There is a significant price difference between organic food and non-organic food because the production and labor costs are higher while yields are lower. This results from the strict framework farmers must comply with in order to be labeled organic. Despite of the price premium, there are numerous reasons why groups of consumers prefer organic food products over their conventional counterparts. The main reason being the perception that organic food is healthier. Organic food is often perceived to have nutritional benefits, like lower nitrate levels or containing more antioxidants, minerals and vitamins than regular food. Since organic crops and plants do not rely on chemical pesticides, they produce more antioxidants. Due to the COVID-19 pandemic, health awareness increased, and this reinforced the health-related driver for consumers in buying organic food. Several studies found benefits of organic foods for consumers’ health, but evidence is mixed. Additional research is necessary to confirm these health benefits.
+            
+            Another key consumer driver for organic food is the environmental perspective. In conventional farming, fertilization, overproduction, and the use of pesticides may negatively affect biodiversity, ecosystems, groundwater, and drinking water supplies. These issues are intended to be minimized in organic farming, which tends to improve soil quality and the conservation of groundwater.
+            
+            Other (less dominant) reasons advocating for organic food are animal wellbeing, greater taste (perception), reduce exposure to pesticides and toxins, a desire for natural products, and food safety considerations.
+           
+            Summarizing, eating habits are changing because consumers increasingly consider other indicators than taste and price in their choice for food, such as a limited impact on nature and fair products. However, health-related claims regarding the benefits of organic food consumption need more evidence to be substantiated.
+            
+            Size of the prize and key organic markets
+            
+            The global organic food market has been growing at a CAGR of approximately 10% over last ten years. Strong growth is expected to continue in the coming years, with the forecast that the organic food market will increase three times faster compared to overall food market, indicating an increasing share of organic food in the overall food market. Globally, there is over 71 million hectares certified organic farmland, representing approximately 1.5 percent of total world farmland. Half of the total organic farmland is located in Australia. However, in terms of consumption, the US market and Western-Europe are global leading organic markets.
+            
+            In the US, the organic food industry is one of the biggest and fastest growing food sectors with a value of approximately $‎50.1 bn. (~€44.7 bn) in 2019.
+            
+            The European organic retail market experienced strong growth over the last years, growing with a CAGR of 9,7% (2011 – 2018). This growth is expected to continue with the same pace in the near future. European market value is estimated at €44.5 bn. in 2019. Leading European countries in terms of per capita expenditure on organic products are Denmark, Sweden and Switzerland. Germany and France are the largest European organic markets but still have a lot of growth potential looking at the relatively low consumption per capita.
+            
+            In Asia, both production and consumption are rapidly increasing, with China and India becoming global producers. China and Japan are leading consumers of organic food with the former market mainly being accelerated by food safety crises at the end of the 2000s. Disparity in production and demand in Asia leads to large imports or organic products from Australia, New Zealand, Europe and the US.
+            
+            Market development varies across regions
+            
+            As mentioned previously, the demand for organic food is forecasted to continue its strong growth in years to come as groups of consumers have a preference for organic products based on a variety of considerations. Production and supply chain challenges limit market size and growth. Farmers experience that it is expensive to shift to organic farming as the investments that must be made, do not directly translate into increasing selling prices. It takes two to three years for farmers to convert from conventional to organic farming and until their products can be sold with a certified organic label. However, although production cannot keep up with the accelerating demand for organic products, the continuously growing demand has led to the introduction of multiple programs across the world supporting farmers to switch to organic agriculture. These programs are initiated by diverse stakeholders such as (agricultural) ministries, governments, traders and food producers. Another reason for proactive support from governments is the lower footprint of organic farming methods compared to conventional methods.
+            
+            Despite a continuing forecasted market growth, and environmental, as well as social benefits, this forecasted market growth will not occur proportional across regions. An often-mentioned downside of organic farming is that it is unable to achieve food security in an ever-increasing global population. This issue indicates a clear limit to the potential of organic farming and following this reasoning, development of the organic food market in terms of production differs per region. While organic farming strongly focuses on quality, conventional farming emphasizes high quantity. Organic farming can become an important food production category in more food-secure developed countries whereas in regions with high population pressure and low land availability organic food production seems to be less significant. Also, in countries where food demand is immense, local production and most likely consumption will not be organic.
+            
+            Can production keep up with demand?
+            
+            The short answer to this frequently raised question is no.
+            
+            It is noticed that conversion of organic products generally does not depend on demand but on the availability of organic products. In other words, restricted production limits the market size and growth. For organic production to follow demand, organic farmers must overcome challenges like finding enough reliable resources to produce organically, which currently is the main restriction for market growth. Furthermore, other supply chain issues must be overcome as the current organic supply chain does not allow for faster production growth. Compared to conventional food production, organic products are generally more difficult to produce, as it requires more labor and resources which puts pressure on profitability. Additionally, producers face problems in expanding production without losing the organic aspect. Land availability is also a limiting factor for organic crop cultivation and food production. This is due to the low agricultural intensification of the organic farms for the crop production. Organic farms require significantly more land and achieve lower yields compared to conventional farms.
+            Changing market dynamics in developed markets
+            It is expected that organic food production continues to grow strongly, especially in more developed and food-secure markets. Particularly when production challenges are overcome, and farmers receive financial support in their shift to organic. In these regions, future organic products are becoming more mainstream in an increasing number of product categories. In less developed markets, the market growth is forecasted to be smaller and more depending on imports. 
+            Within the US and Western-Europe, which are the two largest organic consumption markets, and both have high food security, a clear consolidation trend is noticed. Over the last decade, the organic market in the US and Europe was influenced by innovative, smaller organic producers putting pressure on established food players struggling to shift to organic. This mainly accounts for Europe. However, more and more multinationals are jumping in on the organic trend. Especially in the US, larger corporations acquire smaller players to expand their portfolio with organic products. Good examples are Danone (acquired Whitewave) and Amazon (acquired Whole Foods Market). In Europe, this trend is also noticed with players like Unilever (Pukka Herbs ltd and Mãe Terra), Nestlé (Terrafertil) and Wessanen acquiring multiple organic producers. As the market is rationalizing, this consolidation trend will continue in the next years in a surge of large multinationals to expand/extent their portfolio with organic products through M&A activities.
+            This consolidation trend also occurs when support programs for farmers are insufficient. In the Netherlands for instance, organic farming and consumption are growing but fewer farmers are switching to organic. This is resulting from the expensive shift to organic and a lack of governmental support. Economies of scale seem to be the answer, which indicates consolidation of organic providers. This information corresponds with Hammer’s findings regarding the farmers’ sentiment on organic farming, measured over four key European markets (The Netherlands, United Kingdom, France, Germany). Hammer found that French dairy farming is most likely to pick up on the organic trend, while Dutch dairy farmers are least likely to switch to organic farming in next ten years.
+            What will the future bring?
+            The future of organic food looks bright, with growth fueled by health and environmental considerations. Recent M&A activities endorse that the organic segment is hot and in the middle of attention. Underlying dynamics of the market are changing and consolidation in developed markets is expected to continue. There is a lot of potential for significant growth, also in current key markets. The organic food market in key European markets France and Germany for example, could almost double in value when they reach the average expenditure per capita for leading European countries in this field. Production is not able to keep up with organic consumption, and product availability determines organic consumption. This provides possibilities for exporting countries towards developed food-secure markets such as the US and Western-Europe. Concluding, the organic market is far from reaching the tipping point of growth and offers many untapped opportunities through the whole chain.`,
+            img: require('../img/organic-future.jpeg'),
+            alt: 'table with nutritious food'
+        },
     ]
 }
 

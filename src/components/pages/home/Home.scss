@@ -111,6 +111,7 @@
     padding-bottom: 160px;
     &__products {
         @include flex;
+        width: 100%;
         margin-top: 48px;
     }
 }
@@ -138,6 +139,10 @@
         background: $white-color;
         border-color: $white-color;
         white-space: nowrap;
+    }
+    &__img {
+        width: 460px;
+        height: 580px;
     }
 }
 .header-home {
@@ -192,5 +197,22 @@
 
     &__arrow {
         @include arrow;
+    }
+}
+.news {
+    @include flex;
+    padding: 0 5px;
+}
+.news-home {
+    width: 50%;
+    &__img {
+        &-size {
+            width: 670px;
+            height: 515px;
+            border-radius: 30px;
+        }
+        &:not(:last-child) {
+            padding-right: 30px;
+        }
     }
 }

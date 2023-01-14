@@ -1,8 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import uniqid from 'uniqid';
 
 import HeaderSection from "./HeaderSection";
+import NewsTemplate from "./NewsTemplate";
 
 const NewsHome = () => {
+    const news = useSelector( state => state.news.slice(0, 2));
 
     return (
         <>
@@ -16,6 +20,11 @@ const NewsHome = () => {
                         textColor=""
                         to="/pages"
                     />
+                </div>
+                <div className="news">
+                    {
+                        news.map( item => <NewsTemplate key={uniqid()} item={item}/> )
+                    }
                 </div>
             </section>
         </>

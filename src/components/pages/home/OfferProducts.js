@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import ProductTemplate from "../ProductTemplate";
+import uniqid from 'uniqid'
 
+import ProductTemplate from "../ProductTemplate";
 import HeaderSection from "./HeaderSection";
 
 const OfferProducts = () => {
@@ -23,11 +24,7 @@ const OfferProducts = () => {
                 />
                 <div className="offer-product__products">
                     {
-                        discountProductList.map(item => {
-                            return(
-                                <ProductTemplate item={item}/>
-                            )
-                        })
+                        discountProductList.map(item => <ProductTemplate key={uniqid()}  item={item}/>)
                     }
                 </div>
             </div>

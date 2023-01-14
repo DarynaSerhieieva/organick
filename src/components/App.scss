@@ -46,6 +46,11 @@
     &:not(:last-child) {
         margin-right: 20px;
     }
+    &:hover {
+        cursor: pointer;
+        box-shadow:  0px 14px 32px rgba(0, 0, 0, 0.50), inset 0px 0px 1px #C5C5C5;
+        @include slow-animation 
+    }
     &__box {
         @include flex-column;
     }
@@ -67,15 +72,14 @@
         background: $red;
     }
     &__img{
-        width: 378px;
-        height: 378px;
+        @include img-responsive;
+    }
+    &__inform {
+        @include flex-between-center;
     }
     &__name {
         padding: 19px 0 10px 0;
         margin: 0;
-    }
-    &__inform {
-        @include flex-between;
     }
     &__price {
         @include open-sans-text;
@@ -87,6 +91,12 @@
             color: $base-color;
             font-weight: 700;
         }
+    }
+    &__btn {
+        @include default-button;
+        background: $yellow-button;
+        padding: 20px 20px;
+        align-self: end;
     }
     &__rating {
         @include list-style-none;

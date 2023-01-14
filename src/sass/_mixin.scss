@@ -135,3 +135,10 @@
     background-repeat:no-repeat;
     background-position:center center;
 }
+@mixin img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+@mixin slow-animation {
+    transition-duration: 0.4s;
+}
