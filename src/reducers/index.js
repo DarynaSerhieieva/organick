@@ -251,8 +251,7 @@ const initState = {
         {
             author: 'Marnie Kunz',
             header: '15 Benefits of Organic Food',
-            text: `What is Organic Food?
-            Organic food is grown without the use of synthetic chemicals and does not contain genetically modified organisms. Organic foods can be fruits, vegetables, grains, dairy, and meat. Organic farms can be small or large, and they must meet strict U.S. Department of Agriculture requirements to label their food as organic. 
+            text: `What is Organic Food? Organic food is grown without the use of synthetic chemicals and does not contain genetically modified organisms. Organic foods can be fruits, vegetables, grains, dairy, and meat. Organic farms can be small or large, and they must meet strict U.S. Department of Agriculture requirements to label their food as organic. 
             
             Organic farms aim to cut pollution, provide safe places for farm animals to live, and promote a self-sustaining cycle of resources on a farm, according to the Mayo Clinic. 
             

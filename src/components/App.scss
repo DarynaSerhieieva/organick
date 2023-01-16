@@ -38,7 +38,6 @@
 }
 .product-template {
     @include flex-center-center;
-    width: 33.333%;
     background: $white-color;
     border-radius: 30px;
     border: 1px solid $white-color;

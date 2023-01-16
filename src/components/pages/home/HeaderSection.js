@@ -12,7 +12,7 @@ const HeaderSection = ({ heading, headingYellow, btnName, btnColor, textColor, t
                 </div>
                 <NavLink className={`header-section__link ${btnColor? 'header-section__link-yellow': 'header-section__link-white'}`  } to={to}>
                     <span className="header-section__name">{btnName}</span>
-                    <span className="header-section__arrow"></span>
+                    <div className="header-section__arrow"></div>
                 </NavLink>
             </div>
         </>
